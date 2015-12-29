@@ -1,7 +1,6 @@
 body {
-    background-image: url("cul.jpg");  -->
+  <!--  background-image: url("cul.jpg");  -->
     background-size: cover;
-    text-align: center;
     font-family: "Arial Black";
 }
 
@@ -15,46 +14,53 @@ body {
     padding-top: 10px;
 }
 
-#entete li {
+#entete .li_entete {
     float: left;
     margin-right: 20px;
+    height: 100%;
 }
 
 #entete ul {
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: 0%;
+    width: 240px;
 }
 
-#entete li a, a:hover {
+#entete .li_entete a, a:hover {
     color: green;
 }
 
 #menu {
-    position: absolute;
-    top: 80px;
-    left: 60%;
-    width: 30%;
-    background-color: rgba(0, 150, 0, 0.5);
+    position: fixed;
+    top: 70px;
+    left: 10%;
+    width: 80%;
+    background-color: rgb(0, 150, 0);
 }
 
 #connexion {
     position: absolute;
-    border: double;
-    left: 50px;
-    top: 50px;
+    border: solid;
+    border-top: double;
+    right: 1%;
+    top: 40px;
     padding: 10px;
-    background-color: rgba(150, 0, 0, 0.5);
+    background-color: rgb(150, 0, 0);
+    display: none;
+    list-style-type: none;
 }
 
-<!--
-Partie inscription
-
--->
+#connexion li {
+    list-style-type: none;
+}
 
 #inscriptionform {
+    text-align: center;
     padding-right: 40px;
     position: absolute;
     margin-left: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: auto;
     margin-bottom: auto;
     width: auto;
@@ -62,7 +68,7 @@ Partie inscription
     border: groove;
     border-color: green;
     background-color: rgba(0, 150, 0, 0.5);
-    border-radius: 20%;
+    border-radius: 10%;
 }
 
 #inscriptionform ul {
